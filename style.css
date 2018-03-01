@@ -1,0 +1,12 @@
+.wrapper {
+    height: 400px;
+    width: 600px;
+    margin: auto;
+    position: relative;
+}
+
+.block {
+    height: 20px;
+    width: 20px;
+    position: sticky;
+}
