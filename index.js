@@ -12,7 +12,8 @@ const generateMap = () => {
     const mainDiv = document.getElementById('wrapper'); 
 
     for (let i = 0; i < 600; i++) {
-        mainDiv.innerHTML += '<div class="block" id="block' + i + '"></div>';
+        if (i === 0) mainDiv.innerHTML += '<div class="block" id="block0" style="background-color:grey;"></div>';
+        else mainDiv.innerHTML += '<div class="block" id="block' + i + '" style="background-color:' + generateColor() + ';"></div>';
     }
 };
 

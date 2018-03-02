@@ -3,10 +3,11 @@
     width: 600px;
     margin: auto;
     position: relative;
+    overflow: hidden;
 }
 
 .block {
     height: 20px;
     width: 20px;
-    position: sticky;
+    float: left;
 }
