@@ -11,3 +11,10 @@
     width: 20px;
     float: left;
 }
+
+.button {
+    margin: 15px;
+    width: 80px;
+    height: 60px;
+    float: left;
+}
