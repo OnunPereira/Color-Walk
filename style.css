@@ -1,9 +1,9 @@
+body {
+    background-color: black;
+}
+
 .wrapper {
-    height: 400px;
-    width: 600px;
-    margin: auto;
-    position: relative;
-    overflow: hidden;
+    display: grid;
 }
 
 .block {
