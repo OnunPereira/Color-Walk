@@ -1,16 +1,20 @@
-.wrapper {
-    display: grid;
+body {
+    padding-top: 50px;
 }
 
-.block {
-    height: 20px;
-    width: 20px;
-    float: left;
+canvas {
+    display: block;
+    margin: auto;
+}
+
+#buttons {
+    display: block;
+    margin-left: 625px;
 }
 
 .button {
-    margin: 15px;
-    width: 80px;
-    height: 60px;
-    float: left;
+    display: inline-block;
+    margin: 5px;
+    height: 50px;
+    width: 90px;
 }
