@@ -1,12 +1,12 @@
-var canvas = document.getElementById('gameCanvas');
-var canvasContext = canvas.getContext('2d');
+const canvas = document.getElementById('gameCanvas');
+const canvasContext = canvas.getContext('2d');
 
-var mainMenu = true;
-var score = 0;
-var scoreCanvas = document.getElementById('score');
-var scoreContext = scoreCanvas.getContext('2d');
+let mainMenu = true;
+let score = 0;
+const scoreCanvas = document.getElementById('score');
+const scoreContext = scoreCanvas.getContext('2d');
 
-var cells = [];
+let cells = [];
 const COLORS = ['blue', 'red', 'yellow', 'green', 'magenta', 'orange'];
 const CELL_SIZE = 20; // size in pixels
 
@@ -33,7 +33,7 @@ function generateMap() {
 
     for (let h = 0; h < VERT_CELLS; h++) {
 
-        var line = [];
+        let line = [];
 
         for (let w = 0; w < HORZ_CELLS; w++) {
 
@@ -133,7 +133,7 @@ function checkRow(color, y, previousColor, x) {
         cells[y][x] = 'grey';
     }
 
-    var nextColor = checkRow(color, y, cells[y][x], x + 1);
+    const nextColor = checkRow(color, y, cells[y][x], x + 1);
 
     if (cells[y][x] === color && nextColor === 'grey') {
         cells[y][x] = 'grey';
@@ -152,7 +152,7 @@ function checkColumn(color, x, previousColor, y) {
         cells[y][x] = 'grey';
     }
 
-    var nextColor = checkColumn(color, x, cells[y][x], y + 1);
+    const nextColor = checkColumn(color, x, cells[y][x], y + 1);
 
     if (cells[y][x] === color && nextColor === 'grey') {
         cells[y][x] = 'grey';
@@ -163,7 +163,7 @@ function checkColumn(color, x, previousColor, y) {
 
 function createButtons() {
 
-    var buttons = document.getElementById('buttons');
+    const buttons = document.getElementById('buttons');
     buttons.innerHTML = '';
 
     for (let i = 0; i < COLORS.length; i++) {
