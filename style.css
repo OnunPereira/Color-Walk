@@ -1,20 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
 body {
-    padding-top: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f0f0f0;
+}
+
+.container {
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+}
+
+.container p {
+  font-size: 200%;
+  margin: 2% 0;
 }
 
 canvas {
-    display: block;
-    margin: auto;
+  border: 3px solid black;
+  box-shadow: 0 0 10px #aaa;
 }
 
 #buttons {
-    display: block;
-    margin-left: 532px;
+  display: inline-block;
+  list-style: none;
 }
 
 .button {
-    display: inline-block;
-    margin: 5px;
-    height: 50px;
-    width: 90px;
+  display: inline-block;
+  margin: 5px;
+  height: 50px;
+  width: 80px;
+  border: 2px solid black;
+  box-shadow: 0 0 5px #aaa;
 }

@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
-    <title>Color Walk</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>Color Walk</title>
 </head>
 
-<body style="background-color: #ffffdd;">
+<body>
+
+  <div class="container">
     <canvas id="gameCanvas" height="400px" width="600px"></canvas>
-    <canvas id="score" height="30px" width="190px"></canvas>
-    <div id="buttons"></div>
+    <p><strong>SCORE: <span id="score">0</span></strong></p>
+    <ul id="buttons"></ul>
+  </div>
+
+  <script src="game.js"></script>
+
 </body>
-
-<script src="game.js"></script>
-
 </html>
